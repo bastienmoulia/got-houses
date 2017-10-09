@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="{{ width }}" height="{{ height }}" viewBox="0 0 200 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+  <style>
+    @font-face {
+      font-family: 'GoT';
+      src: url("data:font/truetype;charset=utf-8;base64,{{{ font }}}");
+    }
+  </style>
+  <defs>
+    <radialGradient id="background">
+      <stop offset="0%" stop-color="#000" stop-opacity=".0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity=".3"/>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="200" height="300" fill="{{ color }}"/>
+  <rect x="0" y="0" width="200" height="300" fill="url(#background)"/>
+  <text x="100" y="50" style="fill:white;font-size:12px;font-family:'GoT', Verdana, serif;text-anchor:middle;letter-spacing: 0.2em;">HOUSE {{ house }}</text>
+  <text x="100" y="80" style="fill:white;font-size:5px;font-family:'GoT', Verdana, serif;text-anchor:middle;letter-spacing: 0.2em;">{{ motto }}</text>
+  <image xlink:href="{{{ logoHouse }}}" x="25" y="100" width="150" height="150"/>
+  <!--<image xlink:href="data:image/svg+xml;base64," x="50" y="270" width="100"/>-->
+  <g>{{{ logoGot }}}</g>
+</svg>
