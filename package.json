@@ -1,7 +1,7 @@
 {
   "name": "got-houses",
   "version": "1.0.0",
-  "description": "Poster for Game of Throne Houses",
+  "description": "Poster for Game of Thrones Houses",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
