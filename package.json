@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "start2": "mustache houses/baratheon/data.json template.svg > dist/baratheon.svg"
+    "start": "node index.js"
   },
   "author": "Bastien Moulia <bastienmoulia@gmail.com> (https://github.com/bastienmoulia/)",
   "license": "ISC",

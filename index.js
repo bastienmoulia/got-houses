@@ -25,6 +25,7 @@ fs.readFile('template.svg', function (err, data) {
           obj.font = fs.readFileSync('assets/got.ttf.base64');
           obj.logoGot = fs.readFileSync('assets/got-logo.svg');
           obj.logoHouse = base64Img.base64Sync('houses/' + file + '/logo.png');
+          obj.texture = base64Img.base64Sync('assets/texture.png');
           var output = Mustache.render(data.toString(), obj);
           fs.writeFile('dist/svg/' + file + '.svg', output, function(err) {
             if(err) {
